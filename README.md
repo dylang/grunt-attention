@@ -1,9 +1,8 @@
 # grunt-attention [![Build Status](https://secure.travis-ci.org/dylang/grunt-attention.png?branch=master)](http://travis-ci.org/dylang/grunt-attention)
 
-> Grab your users' attention with a highly visible message in the terminal
+> Display attention-grabbing messages in the terminal.
 
-![files pushed](https://f.cloud.github.com/assets/51505/1282110/fd11ea48-2f6d-11e3-8aa3-099db5da6ac5.png)
-
+![server started](https://f.cloud.github.com/assets/51505/1282112/017bbcda-2f6e-11e3-9d36-8fadd1a7fa16.png)
 
 ## Getting Started
 
@@ -21,26 +20,24 @@ Once that's done, add this line to your project's `Gruntfile.js`:
 grunt.loadNpmTasks('grunt-attention');
 ```
 
-![server started](https://f.cloud.github.com/assets/51505/1282112/017bbcda-2f6e-11e3-9d36-8fadd1a7fa16.png)
-
 ## grunt-attention Options
 
 ```js
 grunt.initConfig({
-  message: {
-    server: {
+  attention: {
+    connect: {
       options: {
-        message: 'Server started: ' + chalk.blue.underline('http://<%= connect.hostname %>:<%= connect.port %>/') + '.',
-        border: 'thin',
-        borderColor: 'blue'
-      }
+        message: 'Server started: ' +
+          chalk.underline.blue('http://<%= connect.hostname %>:<%= connect.port %>/'),
+        borderColor: 'bgBlue'
     },
-    error: {
+    s3: {
       options: {
-        message: 'There was an error: <%= error.message %>',
-        border: '!',
-        borderColor: 'red'
-      }
+        message: chalk.green.bold('Files have been pushed to S3.') +
+            '\n\n' +
+            chalk.green('<%= s3.count %> files uploaded successfully in <%= s3.timer %> seconds.'),
+        border: 'double',
+        borderColor: 'bgGreen'      }
     }
 
   }
@@ -49,6 +46,9 @@ grunt.initConfig({
 // Load the task
 grunt.loadNpmTasks('grunt-attention');
 ```
+
+![files pushed](https://f.cloud.github.com/assets/51505/1282110/fd11ea48-2f6d-11e3-8aa3-099db5da6ac5.png)
+
 
 ### Options
 
@@ -76,12 +76,17 @@ Choices are: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `whit
 
 Currently you can't set both the foreground and the background, that will be resolved in a future release.
 
+## More examples
+
+![examples](https://f.cloud.github.com/assets/51505/1282921/5cd6325a-2f7c-11e3-946a-b69f92a2180b.png)
+
 ## Tests
 Run `grunt test` to lint and run the tests.
 
 ## Release History
 
 * 0.0.1 - Oct 7, 2013 - First release!
+* 0.0.2 - Oct 7, 2013 - Added examples to the doc, fixed a typo.
 
 ## License
 

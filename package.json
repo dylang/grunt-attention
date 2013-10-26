@@ -1,7 +1,7 @@
 {
     "name": "grunt-attention",
     "description": "Display attention-grabbing messages in the terminal",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "homepage": "https://github.com/dylang/grunt-attention",
     "author": {
         "name": "Dylan Greene",
@@ -20,7 +20,7 @@
             "url": "https://github.com/dylang/grunt-attention/blob/master/LICENSE-MIT"
         }
     ],
-    "main": "lib/related",
+    "main": "Gruntfile.js",
     "engines": {
         "node": ">= 0.8.0"
     },

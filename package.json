@@ -1,62 +1,60 @@
 {
-    "name": "grunt-attention",
-    "description": "Display attention-grabbing messages in the terminal",
-    "version": "0.0.3",
-    "homepage": "https://github.com/dylang/grunt-attention",
-    "author": {
-        "name": "Dylan Greene",
-        "email": "dylang@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/dylang/grunt-attention.git"
-    },
-    "bugs": {
-        "url": "https://github.com/dylang/grunt-attention/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/dylang/grunt-attention/blob/master/LICENSE-MIT"
-        }
-    ],
-    "main": "lib/generate-message.js",
-    "engines": {
-        "node": ">= 0.8.0"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "chai": "~1.8.0",
-        "proxyquire": "~0.5.1",
-        "grunt-contrib-jshint": "~0.6.4",
-        "grunt-cafe-mocha": "~0.1.8",
-        "grunt-notify": "~0.2.13",
-        "grunt-contrib-watch": "~0.5.3",
-        "grunt-readme": "~0.1.3",
-        "matchdep": "~0.1.2",
-        "time-grunt": "~0.1.1"
-    },
-    "keywords": [
-        "text",
-        "logging",
-        "log",
-        "grunt",
-        "gruntplugin",
-        "log",
-        "message",
-        "attention",
-        "logging",
-        "box",
-        "terminal",
-        "console",
-        "strings"
-    ],
-    "dependencies": {
-        "wordwrap": "0.0.2",
-        "chalk": "~0.2.1"
-
+  "name": "grunt-attention",
+  "description": "Display attention-grabbing messages in the terminal",
+  "version": "0.0.4",
+  "homepage": "https://github.com/dylang/grunt-attention",
+  "author": {
+    "name": "Dylan Greene",
+    "email": "dylang@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dylang/grunt-attention.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dylang/grunt-attention/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dylang/grunt-attention/blob/master/LICENSE-MIT"
     }
+  ],
+  "main": "lib/generate-message.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.1",
+    "chai": "^1.9.1",
+    "proxyquire": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-cafe-mocha": "^0.1.8",
+    "grunt-notify": "^0.2.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "matchdep": "^0.3.0",
+    "time-grunt": "^0.3.1"
+  },
+  "keywords": [
+    "text",
+    "logging",
+    "log",
+    "grunt",
+    "gruntplugin",
+    "log",
+    "message",
+    "attention",
+    "logging",
+    "box",
+    "terminal",
+    "console",
+    "strings"
+  ],
+  "dependencies": {
+    "wordwrap": "0.0.2",
+    "chalk": "~0.2.1"
+  }
 }

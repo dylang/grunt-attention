@@ -88,6 +88,7 @@ Run `grunt test` to lint and run the tests.
 * 0.0.1 - Oct 7, 2013 - First release!
 * 0.0.2 - Oct 7, 2013 - Added examples to the doc, fixed a typo.
 * 0.0.3 - Oct 26, 2013 - Fixed `main` in the `package.json`.
+* 0.0.4 - Apr 11, 2014 - Move main to the lib
 
 ## License
 

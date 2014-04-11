@@ -20,7 +20,7 @@
             "url": "https://github.com/dylang/grunt-attention/blob/master/LICENSE-MIT"
         }
     ],
-    "main": "Gruntfile.js",
+    "main": "lib/generate-message.js",
     "engines": {
         "node": ">= 0.8.0"
     },

@@ -1,7 +1,7 @@
 {
   "name": "grunt-attention",
   "description": "Display attention-grabbing messages in the terminal",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/dylang/grunt-attention",
   "author": {
     "name": "Dylan Greene",
@@ -54,7 +54,7 @@
     "strings"
   ],
   "dependencies": {
-    "wordwrap": "0.0.2",
-    "chalk": "~0.2.1"
+    "wordwrap": "^0.0.2",
+    "chalk": "^0.4.0"
   }
 }

@@ -72,8 +72,15 @@ module.exports = function (grunt) {
                     border: '!',
                     borderColor: 'bgRed'
                 }
-            }
-        },
+            },
+           'too damn long': {
+               options: {
+                   message: 'this_is_a_very_very_very_very_very_very_very_very_very_very_very_very_long_message',
+                   border: 'double',
+                   borderColor: 'bgGreen'
+               }
+           }
+       },
 
         cafemocha: {
             test: {

@@ -1,7 +1,7 @@
 {
   "name": "grunt-attention",
   "description": "Display attention-grabbing messages in the terminal",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "homepage": "https://github.com/dylang/grunt-attention",
   "author": {
     "name": "Dylan Greene",
@@ -28,15 +28,15 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "^0.4.1",
     "chai": "^1.9.1",
-    "proxyquire": "^0.6.0",
-    "grunt-contrib-jshint": "^0.10.0",
+    "grunt": "^0.4.5",
     "grunt-cafe-mocha": "^0.1.8",
-    "grunt-notify": "^0.2.13",
+    "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.3.1",
     "matchdep": "^0.3.0",
-    "time-grunt": "^0.3.1"
+    "proxyquire": "^0.6.0",
+    "time-grunt": "^1.0.0"
   },
   "keywords": [
     "text",
@@ -54,7 +54,7 @@
     "strings"
   ],
   "dependencies": {
-    "wordwrap": "^0.0.2",
-    "chalk": "^0.4.0"
+    "chalk": "^0.5.1",
+    "wordwrap": "^0.0.2"
   }
 }
